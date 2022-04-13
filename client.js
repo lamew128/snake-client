@@ -9,8 +9,9 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log("12345");
+    conn.write("EWZ has connected");
     conn.write("Name: EWZ");
+    //setInterval(() => (conn.write("Move: up")), 1000);
   });
 
   conn.on("data", (data) => {
