@@ -11,6 +11,8 @@ const handleUserInput = function (key) {
     connection.write("Move: down");
   } else if (key === 'D' || key ==='d') {
     connection.write("Move: right");
+  } else if (key === 'z' || key ==='Z') {
+    connection.write("Say: 1QAZ2WSX3EDC4RFV5TGB6YHN7UJM8IK9OL0P");
   }
 };
 
